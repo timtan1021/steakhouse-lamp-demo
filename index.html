@@ -60,8 +60,8 @@
       </div>
       <div class="today-item">
         <dt>定休日</dt>
-        <dd>掲載媒体によって記載が違います<br>
-            <span class="today-caution">要確認: 定休日と平日昼の営業は、お店に確認中です。当日は Instagram をご覧ください</span></dd>
+        <dd>決まった定休日はありません。休みの日は Instagram でお知らせしています<br>
+            <span class="today-caution">要確認: 定休日と平日昼の営業は、お店に確認中です</span></dd>
       </div>
       <div class="today-item today-item-alert">
         <dt>駐車場</dt>
@@ -70,11 +70,16 @@
       <div class="today-item">
         <dt>行き方</dt>
         <dd>国道1号沿い。神奈中バス「坂下口」バス停の前<br>
-            東戸塚駅 東口から徒歩約20分</dd>
+            東戸塚駅 東口から徒歩約20分<br>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%8F%E3%82%A6%E3%82%B9%E3%82%89%E3%82%93%E3%81%B7%E6%9C%AC%E5%BA%97%20%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%88%B8%E5%A1%9A%E5%8C%BA%E5%B9%B3%E6%88%B8%E7%94%BA491-4">地図を開く</a></dd>
       </div>
       <div class="today-item">
         <dt>電話</dt>
         <dd><a href="tel:0458733379">045-873-3379</a></dd>
+      </div>
+      <div class="today-item">
+        <dt>予算</dt>
+        <dd class="budget" data-price-source="食べログ・ヒトサラ・Googleマップの一致">ひとり 2,000〜3,000円くらい（食べログ・ヒトサラ・Googleマップの記載）</dd>
       </div>
       <div class="today-item">
         <dt>席</dt>
@@ -87,23 +92,26 @@
 <section class="how">
   <div class="section-inner">
     <h2>食べ方</h2>
-    <p class="how-lead">ハンバーグもステーキも、レアで届きます。焼き石が届いたら、ここから先はお客さまの手で。</p>
     <fieldset class="doneness">
       <legend>焼き加減はお客さまが決めます。試しに選んでみてください</legend>
       <div class="doneness-options">
-        <label class="doneness-option"><input type="radio" name="doneness" value="rare" checked><span>レア</span></label>
-        <label class="doneness-option"><input type="radio" name="doneness" value="medium"><span>ミディアム</span></label>
-        <label class="doneness-option"><input type="radio" name="doneness" value="well"><span>ウェルダン</span></label>
+        <input class="doneness-radio" type="radio" name="doneness" id="doneness-rare" value="rare" checked>
+        <label class="doneness-option" for="doneness-rare">レア</label>
+        <input class="doneness-radio" type="radio" name="doneness" id="doneness-medium" value="medium">
+        <label class="doneness-option" for="doneness-medium">ミディアム</label>
+        <input class="doneness-radio" type="radio" name="doneness" id="doneness-well" value="well">
+        <label class="doneness-option" for="doneness-well">ウェルダン</label>
+        <p class="doneness-text">
+          <span data-doneness-text="rare">届いたままの状態です。切り口は赤く、焼き石にのせずにそのまま食べられます。</span>
+          <span data-doneness-text="medium">片面ずつ、数秒だけ石にのせます。赤みを残したまま温度が上がります。</span>
+          <span data-doneness-text="well">両面をしっかり石に当てます。香ばしさが前に出ます。</span>
+        </p>
       </div>
     </fieldset>
     <ol class="how-steps">
       <li class="how-step">
-        <h3>焼き石が来る</h3>
-        <p>ハンバーグもステーキも、レアの状態で届きます。皿と一緒に、熱した焼き石が付いてきます。</p>
-      </li>
-      <li class="how-step">
-        <h3>好みで焼く</h3>
-        <p>一口ずつ、焼き石にのせて好みの焼き加減にします。最後まで熱いまま食べられます。</p>
+        <h3>焼き石で、好みまで焼く</h3>
+        <p>ハンバーグもステーキもレアで届き、熱した焼き石が付いてきます。一口ずつのせて、好みの焼き加減に。最後まで熱いまま食べられます。</p>
       </li>
       <li class="how-step">
         <h3>ソースを替える</h3>
@@ -142,7 +150,8 @@
     <dl class="access-grid">
       <div>
         <dt>住所</dt>
-        <dd>〒244-0803 横浜市戸塚区平戸町491-4 第2笠原ビル 1F</dd>
+        <dd>〒244-0803 横浜市戸塚区平戸町491-4 第2笠原ビル 1F<br>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%8F%E3%82%A6%E3%82%B9%E3%82%89%E3%82%93%E3%81%B7%E6%9C%AC%E5%BA%97%20%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%88%B8%E5%A1%9A%E5%8C%BA%E5%B9%B3%E6%88%B8%E7%94%BA491-4">Googleマップで開く</a></dd>
       </div>
       <div>
         <dt>バス</dt>
@@ -162,22 +171,6 @@
       <picture><source srcset="images/exterior-960.webp" type="image/webp"><img src="images/exterior-960.jpg" width="831" height="875" alt="国道沿いの店の外観。赤い看板に「ステーキハウス らんぷ 本店」"></picture>
       <figcaption>写真はお店のInstagramの投稿から仮でお借りしています</figcaption>
     </figure>
-  </div>
-</section>
-
-<section class="links">
-  <div class="section-inner">
-    <h2>当日の情報と予約</h2>
-    <div class="link-cards">
-      <a class="link-card" href="https://www.instagram.com/steak_house_lamp/">
-        <span class="link-card-title">Instagram</span>
-        <span class="link-card-note">臨時休業や新しいメニューはこちらに出ます</span>
-      </a>
-      <a class="link-card" href="https://tabelog.com/kanagawa/A1401/A140305/14086119/">
-        <span class="link-card-title">食べログでネット予約</span>
-        <span class="link-card-note">予約はこちらから</span>
-      </a>
-    </div>
   </div>
 </section>
 
